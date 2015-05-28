@@ -2,3 +2,8 @@
 .project
 Debug
 Release
+*.id
+*.log
+*.src
+*.patch
+*.swp
