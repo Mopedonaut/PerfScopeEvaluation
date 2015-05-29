@@ -27,14 +27,12 @@ namespace mdd {
 	}
 
 	void expensiveFuntion() {
-		//	cout << "Zzzzzz...." << endl;
-		//	usleep(500);
-		//	cout << "Zzzzzz...." << endl;
+//		cout << "Zzzzzz...." << endl;
+		usleep(500);
+//		cout << "Zzzzzz...." << endl;
 	}
 
 	void unfrequentFunctionLevel3(int level) {
-		expensiveFuntion();
-
 		if (level > 3) {
 			unfrequentFunctionLevel4(level);
 		}
@@ -47,7 +45,6 @@ namespace mdd {
 	}
 
 	void unfrequentFunctionLevel1(int level) {
-		expensiveFuntion();
 		if (level > 1) {
 			unfrequentFunctionLevel2(level);
 		}
