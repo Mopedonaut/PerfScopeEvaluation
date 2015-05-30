@@ -52,11 +52,11 @@ namespace mdd {
 		expensiveFuntion();
 	}
 
-	void unusedFunction() {
-	}
-
 	void frequentFunctionRenamed() {
 		// does nothing
+	}
+
+	void unusedFunction() {
 	}
 
 	/**
