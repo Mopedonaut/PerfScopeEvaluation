@@ -9,6 +9,9 @@
 
 namespace mdd {
 
+	int loopCount = 0;
+	int unused = 0;
+
 	void unfrequentFunctionLevel6() {
 		// no op
 	}
@@ -65,7 +68,8 @@ namespace mdd {
 	int main() {
 		unfrequentFunctionLevel1(4);
 
-		for (int i = 0; i < 10000; ++i) {
+
+		for (int i = 0; i < loopCount; ++i) {
 			frequentFunctionRenamed();
 		}
 		return 0;
