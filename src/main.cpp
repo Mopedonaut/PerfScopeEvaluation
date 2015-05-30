@@ -55,7 +55,7 @@ namespace mdd {
 	void unusedFunction() {
 	}
 
-	void frequentFunction() {
+	void frequentFunctionRenamed() {
 		// does nothing
 	}
 
@@ -66,7 +66,7 @@ namespace mdd {
 		unfrequentFunctionLevel1(4);
 
 		for (int i = 0; i < 10000; ++i) {
-			frequentFunction();
+			frequentFunctionRenamed();
 		}
 		return 0;
 	}
