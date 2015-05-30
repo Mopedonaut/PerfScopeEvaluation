@@ -62,6 +62,7 @@ namespace mdd {
 	}
 
 	void unusedFunction() {
+		int doesNothing = 4;
 	}
 
 	/**
