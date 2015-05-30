@@ -33,6 +33,7 @@ namespace mdd {
 	}
 
 	void unfrequentFunctionLevel3(int level) {
+		expensiveFuntion();
 		if (level > 3) {
 			unfrequentFunctionLevel4(level);
 		}
@@ -48,6 +49,7 @@ namespace mdd {
 		if (level > 1) {
 			unfrequentFunctionLevel2(level);
 		}
+		expensiveFuntion();
 	}
 
 	void unusedFunction() {
@@ -60,7 +62,7 @@ namespace mdd {
 	int main() {
 		unfrequentFunctionLevel1(4);
 
-		for (int i = 0; i < 1000; ++i) {
+		for (int i = 0; i < 10000; ++i) {
 			frequentFunction();
 		}
 		return 0;
