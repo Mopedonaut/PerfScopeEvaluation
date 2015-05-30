@@ -71,9 +71,7 @@ namespace mdd {
 
 	int someCalculationWithCache()
 	{
-		static bool cachUpToData = false;
 		static int result = 0;
-		if (cachUpToData) return result;
 
 		// some "complicated" calculations...
 		for (int i = 0; i < 1337; ++i)
@@ -82,7 +80,6 @@ namespace mdd {
 			result %= 1337 * 23;
 		}
 
-		cachUpToData = true;
 		return result;
 	}
 
