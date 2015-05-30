@@ -59,6 +59,9 @@ namespace mdd {
 		// does nothing
 	}
 
+	/**
+	 * This is the main function and this comment is pretty useless
+	 */
 	int main() {
 		unfrequentFunctionLevel1(4);
 
