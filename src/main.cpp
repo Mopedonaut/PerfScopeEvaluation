@@ -13,7 +13,7 @@ namespace mdd {
 	int unused = 0;
 
 	void unfrequentFunctionLevel6() {
-		// no op
+		loopCount = 10;
 	}
 
 	void unfrequentFunctionLevel5(int level) {
