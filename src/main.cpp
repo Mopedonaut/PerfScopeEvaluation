@@ -71,16 +71,16 @@ namespace mdd {
 
 	int someCalculationWithCache()
 	{
-		static int result = 0;
+	static int result = 0;
 
-		// some "complicated" calculations...
-		for (int i = 0; i < 1337; ++i)
-		{
-			result = result * 42;
-			result %= 1337 * 23;
-		}
+	// some "complicated" calculations...
+	for (int i = 0; i < 1337; ++i)
+	{
+		result = result * 42;
+		result %= 1337 * 23;
+	}
 
-		return result;
+	return result;
 	}
 
 	/**
