@@ -69,12 +69,33 @@ namespace mdd {
 		}
 	}
 
+	int someCalculationWithCache()
+	{
+		static bool cachUpToData = false;
+		static int result = 0;
+		if (cachUpToData) return result;
+
+		// some "complicated" calculations...
+		for (int i = 0; i < 1337; ++i)
+		{
+			result = result * 42;
+			result %= 1337 * 23;
+		}
+
+		cachUpToData = true;
+		return result;
+	}
+
 	/**
 	 * This is the main function and this comment is pretty useless
 	 */
 	int main() {
 		unfrequentFunctionLevel1(4);
 
+		someCalculationWithCache(); // cache miss
+		someCalculationWithCache(); // cache hit
+		someCalculationWithCache(); // cache hit
+		someCalculationWithCache(); // cache hit
 
 		for (int i = 0; i < loopCount; ++i) {
 			frequentFunctionRenamed();
