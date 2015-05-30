@@ -14,6 +14,7 @@ namespace mdd {
 
 	void unfrequentFunctionLevel6() {
 		loopCount = 10;
+		int bla = 40;
 		unused = 10;
 	}
 
