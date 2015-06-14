@@ -63,7 +63,7 @@ namespace mdd {
 
 	void unusedFunction() {
 		int doesNothing = 4;
-		for (int i = 0; i < 2000; ++i)
+		for (int j = 0; j < 2000; ++j)
 		{
 			doesNothing = doesNothing++ % 1337;
 		}
